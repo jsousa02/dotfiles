@@ -202,6 +202,7 @@ exec_always setxkbmap pt
 
 # Keybinding for i3lock
 bindsym $mod+x exec /home/jorge/.config/scripts/lock
+exec xautolock -detectsleep -time 10 -locker "/home/jorge/.config/scripts/lock"
 
 # Assign programms to workspaces
 for_window [class="firefox"] move to workspace $ws2
@@ -212,6 +213,7 @@ for_window [class="jetbrains-idea-ce"] move to workspace $ws5
 for_window [class="jetbrains-clion"] move to workspace $ws5
 for_window [class="zoom"] move to workspace $ws6
 for_window [class="Wxmaxima"] move to workspace $ws6
+for_window [class="Slack"] move to workspace $ws6
 
 # Window compositor
 exec_always picom -f
@@ -353,5 +355,8 @@ mode "$mode_gaps_left" {
 # Keybinding for printscreen
 bindsym Print exec gnome-screenshot --interactive
 
+# Shutdown menu
 bindsym Control+Mod4+Delete exec /home/jorge/.config/scripts/shutdown_menu
 
+# Redshift
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent

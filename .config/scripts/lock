@@ -15,7 +15,7 @@ V='#ffffffff'  # verifying
 --ringwrong-color=$W   \
 \
 --inside-color=$B      \
---ring-color=$D        \
+--ring-color=$B        \
 --line-color=$B        \
 --separator-color=$D   \
 \
@@ -30,7 +30,7 @@ V='#ffffffff'  # verifying
 --screen 1            \
 --blur 5              \
 --clock               \
---indicator           \
+#--indicator           \
 --time-str="%H:%M:%S"  \
 --date-str="%A, %m %Y" \
---keylayout 1         \
+#--keylayout 1         \

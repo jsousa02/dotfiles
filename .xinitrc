@@ -51,4 +51,5 @@ fi
 wal -R
 nitrogen --restore &
 picom &
+redshift &
 exec i3
