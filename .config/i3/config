@@ -347,3 +347,4 @@ bindsym Print exec gnome-screenshot --interactive
 bindsym Control+Mod4+Delete exec /home/jorge/.config/scripts/shutdown_menu
 
 exec_always --no-startup-id /home/jorge/.config/polybar/launch.sh
+
