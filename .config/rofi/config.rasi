@@ -1,3 +1,6 @@
+/** Basic config file **/
+
 configuration {
-	theme: "/usr/share/rofi/themes/Arc-Dark.rasi";
+  show-icons:         true;
+  icon-theme:         "Papirus";
 }
