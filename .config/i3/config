@@ -207,13 +207,13 @@ for_window [class="Slack"] move to workspace $ws6
 exec_always picom -f
 
 # Window colors
-set $bgcolor	#1a1919
-set $ibgcolor	#000000
+set $bgcolor	#b4afaf
+set $ibgcolor	#1a1919
 set $textcolor	#ffffff
 set $ubgcolor	#000000
 
 # 			border		background	text		indicator
-client.focused		$bgcolor	$bgcolor	$textcolor	$bgcolor
+client.focused		$bgcolor	$ibgcolor	$textcolor	$ibgcolor
 client.unfocused	$ibgcolor	$ibgcolor	$textcolor	$bgcolor
 client.focused_inactive	$ibgcolor	$ibgcolor	$textcolor	$bgcolor
 client.urgent		$ubgcolor	$ubgcolor	$textcolor	$bgcolor	
