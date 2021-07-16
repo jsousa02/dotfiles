@@ -344,7 +344,7 @@ mode "$mode_gaps_left" {
 bindsym Print exec gnome-screenshot --interactive
 
 # Shutdown menu
-bindsym Control+Mod4+Delete exec /home/jorge/.config/scripts/shutdown_menu
+bindsym Control+Mod4+Delete exec /home/jorge/.config/rofi/powermenu/powermenu.sh
 
 exec_always --no-startup-id /home/jorge/.config/polybar/launch.sh
 
