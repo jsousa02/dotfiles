@@ -148,11 +148,11 @@ label-mode-background = ${colors.primary}
 label-focused = %name%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
-label-focused-padding = 2
+label-focused-padding = 5
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
-label-unfocused-padding = 2
+label-unfocused-padding = 5
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %name%
@@ -163,7 +163,7 @@ label-visible-padding = ${self.label-focused-padding}
 ; urgent = Workspace with urgency hint set
 label-urgent = %name%
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 5
 
 ; Separator in between workspaces
 ; label-separator = |
