@@ -184,25 +184,15 @@ label-song-ellipsis = true
 
 [module/spotify]
 type = custom/script
-
-exec = /home/jorge/.config/scripts/spotify.py
-
 interval = 1
-
+format-prefix = " "
 format = <label>
+exec = python /home/jorge/.config/polybar/scripts/spotify_polybar.py -f '{artist}: {song}'
 format-underline = #db172b
-
-;%output:0:60:..% for truncating until 60 characters
-label = %output:0:70...%
-
-;tail = true
-
-; Clicking with left button toggles the state between play and paused
-; Clicking with the right button skips the song and with the middle goes back to the previous one
-; Probably will see little use except play pause but it sounds interesting
-click-left = playerctl play-pause
-click-right = playerctl next
-click-middle = playerctl previous
+;control players (optional)
+click-left = playerctl --player=spotify play-pause 
+click-right = playerctl --player=spotify next 
+click-middle = playerctl --player=spotify previous 
 
 [module/xbacklight]
 type = internal/xbacklight
